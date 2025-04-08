@@ -9,7 +9,8 @@ import java.util.List;
 public class Kit {
 
     @Id
-    private String serialNumber;  // Unique identifier for the kit
+    private String serialNumber;
+    private String idd;// Unique identifier for the kit
     private String status;        // Status of the kit (active, inactive)
     private List<KitData> kitData; // List of kit data entries
 
@@ -36,6 +37,14 @@ public class Kit {
 
     public void setKitData(List<KitData> kitData) {
         this.kitData = kitData;
+    }
+
+    public String getIdd() {
+        return idd;
+    }
+
+    public void setIdd(String idd) {
+        this.idd = idd;
     }
 }
 
