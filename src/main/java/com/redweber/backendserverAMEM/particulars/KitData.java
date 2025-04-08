@@ -1,9 +1,10 @@
 package com.redweber.backendserverAMEM.particulars;
-
 import java.util.List;
+
 
 public class KitData {
 
+    private String address;
     private String timestamp;
     private String location;
     private String temperature;
@@ -11,18 +12,16 @@ public class KitData {
     private String crashStatus;
     private List<String> cameraFootage;
 
-    // Constructor
-    public KitData(String timestamp, String location, String temperature, String gasLeakageStatus,
-                   String crashStatus, List<String> cameraFootage) {
-        this.timestamp = timestamp;
-        this.location = location;
-        this.temperature = temperature;
-        this.gasLeakageStatus = gasLeakageStatus;
-        this.crashStatus = crashStatus;
-        this.cameraFootage = cameraFootage;
+
+
+    public String getAddress() {
+        return address;
     }
 
-    // Getters and Setters
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String getTimestamp() {
         return timestamp;
     }
